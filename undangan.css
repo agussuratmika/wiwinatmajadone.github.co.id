@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #210d45;
+    color: #e0c08c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+header, section, footer {
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3); /* Putih bening */
+}
+
+
+
+
+/* Header Styles */
+.main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #e0c08c;
+}
+.main-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Section Styles */
+.introduction h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #f5e8c8;
+}
+.introduction p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Event Details */
+.event-details {
+    margin-top: 20px;
+}
+
+.detail-item {
+    margin-bottom: 20px;
+}
+.detail-item .icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.divider {
+    border-top: 1px solid #e0c08c;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.address .map {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.location-button {
+    height: 40px;
+    padding: 0 20px;
+    background-color: #e0c08c;
+    color: #161948;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.location-button:hover {
+    background-color: #d4a972;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+footer h1 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #f5e8c8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    header, section, footer {
+        width: 100%;
+    }
+    .main-header h1 {
+        font-size: 1.5rem;
+    }
+    .introduction h1 {
+        font-size: 1.5rem;
+    }
+    .location-button {
+        width: 100%;
+    }
+}
+/* Gaya untuk foto bayi */
+.baby-photo {
+    margin-bottom: 20px; /* Jarak dengan elemen di bawahnya */
+    text-align: center;
+}
+
+.baby-photo img {
+    max-width: 400px; /* Atur ukuran gambar (ubah sesuai kebutuhan) */
+    height: 300px; /* Jaga proporsi gambar */
+  
+
+  
+}
+
