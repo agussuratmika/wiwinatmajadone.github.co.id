@@ -41,7 +41,34 @@
         <div class="divider"></div>
         <div class="address">
             <p>Rumah Kediaman:</p>
-            <img src="peta.jpg" alt="Peta lokasi" class="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.7367849421635!2d115.06899841467058!3d-8.114987084135723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19705022d2abf%3A0xa87a8e0d5e4a4b27!2sSMP%20Negeri%207%20Singaraja!5e0!3m2!1sen!2sid!4v1700000000000" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                // Lokasi: SMP Negeri 7 Singaraja
+                const lokasi = { lat: -8.115, lng: 115.069 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 15,
+                    center: lokasi,
+                });
+                const marker = new google.maps.Marker({
+                    position: lokasi,
+                    map: map,
+                    title: "SMP Negeri 7 Singaraja",
+                });
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
             <a href="https://maps.app.goo.gl/oYxQEFYgfchmcCjd6" target="_blank">
                 <button class="location-button">BUKA LOKASI</button>
             </a>
@@ -55,5 +82,22 @@
         <h1>Om Shanti, Shanti, Shanti Om</h1>
         <p>© 2024 Keluarga Nama Keluarga</p>
     </footer>
+
+    <section class="photo-album">
+        <h2>Album Foto</h2>
+        <div class="album-grid">
+            <img src="/fotobayi/1.jpg" alt="Foto 1">
+            <img src="/fotobayi/2.jpg" alt="Foto 2">
+            <img src="/fotobayi/3.jpg" alt="Foto 3">
+            <img src="/fotobayi/4.jpg" alt="Foto 4">
+            <img src="/fotobayi/5.jpg" alt="Foto 5">
+            <img src="/fotobayi/6.jpg" alt="Foto 6">
+            <img src="/fotobayi/7.jpg" alt="Foto 7">
+            <img src="/fotobayi/8.jpg" alt="Foto 8">
+            <img src="/fotobayi/9.jpg" alt="Foto 9">
+            <img src="/fotobayi/10.jpg" alt="Foto 10">
+        </div>
+    </section>
+    
 </body>
 </html>
