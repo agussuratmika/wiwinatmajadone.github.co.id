@@ -134,3 +134,44 @@ footer h1 {
   
 }
 
+/* Keyframes untuk animasi */
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Gaya awal elemen sebelum animasi */
+.animate {
+    opacity: 0; /* Elemen tidak terlihat awalnya */
+    transform: scale(0); /* Ukuran kecil */
+    transition: all 0.5s ease-out;
+}
+
+/* Gaya ketika elemen terlihat */
+.animate.show {
+    animation: scaleUp 0.5s ease-out forwards;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+    gap: 10px; /* Jarak antar gambar */
+}
+
+.album-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.album-grid img:hover {
+    transform: scale(1.05); /* Efek zoom pada hover */
+}
